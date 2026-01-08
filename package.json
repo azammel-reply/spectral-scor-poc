@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./run-tests.sh",
+    "lint": "spectral lint specs/*.yaml --ruleset owasp23-ruleset.spectral.yml",
     "lint:valid": "spectral lint specs/customer-api-v1.yaml --ruleset owasp23-ruleset.spectral.yml",
     "lint:insecure": "spectral lint specs/customer-api-v1-insecure.yaml --ruleset owasp23-ruleset.spectral.yml"
   },
